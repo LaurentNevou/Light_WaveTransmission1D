@@ -7,3 +7,6 @@ Three structures are proposed:
 -> Fabry-Perot cavity
 
 -> VCSEL structure
+
+
+=> If you like it, don't forget the star!

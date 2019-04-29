@@ -8,5 +8,7 @@ Three structures are proposed:
 
 -> VCSEL structure
 
+-> Anti-reflexion coating
+
 
 => If you like it, don't forget the star!

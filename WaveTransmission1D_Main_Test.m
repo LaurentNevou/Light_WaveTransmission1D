@@ -89,7 +89,7 @@ idx=find(abs(lambda-lambda0)==min(abs(lambda-lambda0)));
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-subplot(221,'fontsize',FS)
+subplot(2,2,1,'fontsize',FS)
 hold on;grid on;
 
 plot(z*1e6,n,'b','linewidth',LW)
@@ -101,7 +101,7 @@ ylabel('optical index')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-subplot(223,'fontsize',FS)
+subplot(2,2,3,'fontsize',FS)
 hold on;grid on;
 
 plot(z*1e6,real(PSI(:,idx)),'b.-','linewidth',LW)
@@ -121,7 +121,7 @@ legend('real(E)','imag(E)','|E|^2')
 
 if length(lambda)>1
 
-subplot(122,'fontsize',FS)
+subplot(1,2,2,'fontsize',FS)
 hold on;grid on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

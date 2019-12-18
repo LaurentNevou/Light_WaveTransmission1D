@@ -39,7 +39,18 @@ phi=2*pi*n2*l2./lambda;
 
 delta=2*(phi-theta);
 
-% see the book of Vincenzo Savona for the formula
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% see the Chapther of Vincenzo Savona for the formula in the book:
+% Confined Photon Systems
+% Fundamentals and Applications Lectures from the Summerschool Held in Cargèse, Corsica, 3–15 August 1998
+% Linear Optical Properties of Semiconductor Microcavities with Embedded Quantum Wells, Vincenzo Savona, pages 173-242
+% 3) The Fabry-Perot resonator p184
+% https://link.springer.com/chapter/10.1007/BFb0104383
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Emmanuel Rosencher, Optoelectronic
+% Complement to Chapter 9
+% 9D) Fabry-Perot cavities and Bragg reflectors, page 437
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 tfp = t12*t21 ./ ( 1 +  r12*r21*exp(2i*(phi-theta)) ) ;
 Tfp = (abs(tfp)).^2 .* exp(-alpha2*l2);
